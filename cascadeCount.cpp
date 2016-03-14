@@ -17,7 +17,7 @@ int main( int argc, char **argv )
   CascadeClassifier cascadeDetect;
   string cascadeFile = "./banana_classifier.xml";
 
-  if (!cascadeDetect.load(cascadeDetect)) {
+  if (!cascadeDetect.load(cascadeFile)) {
     cerr << "Error loading the classifier file" << endl;
     return 0;
   }
